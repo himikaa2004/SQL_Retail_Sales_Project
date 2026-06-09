@@ -75,15 +75,15 @@ WHERE Transactions_ID IS NULL
 	OR Cogs IS NULL
 	OR TotaL_Sale IS NULL;
 
-** TOTAL NUMBER OF SALES? **                    
+-- TOTAL NUMBER OF SALES? --                    
 SELECT COUNT(*) as total_number_of_sales 
 FROM Retail_Sales;
 
-** TOTAL NUMBER OF UNIQUE CUSTOMERS? **     
+-- TOTAL NUMBER OF UNIQUE CUSTOMERS? --     
 SELECT COUNT(DISTINCT Customer_ID) as total_number_of_unique_customers 
 FROM Retail_Sales;
 
-** TOTAL NUMBER OF UNIQUE CATEGORY? **      
+-- TOTAL NUMBER OF UNIQUE CATEGORY? --      
 SELECT DISTINCT Category 
 FROM Retail_Sales;
 
@@ -144,7 +144,7 @@ SELECT
 	COUNT(Transactions_ID) as transactions_id
 FROM Retail_Sales
 GROUP BY 1,2
--- ORDER BY 1;           ORDER BY 1 is used to order the query results by the first column listed in the SELECT statement.
+ORDER BY 1;          -- ORDER BY 1 is used to order the query results by the first column listed in the SELECT statement.
 
 ```
 
