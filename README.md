@@ -110,7 +110,7 @@ WHERE Category = 'Clothing'
 
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3. **Write a SQL query to calculate the total sales (total_sale) for each category**:
 ```sql
 SELECT 
 	Category,
@@ -121,7 +121,7 @@ GROUP BY 1;          -- GROUP BY 1 is used to group the query results by the fir
 
 ```
 
-4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
+4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category**:
 ```sql
 SELECT 
 	ROUND(AVG(Age), 2) as Average_Age          -- ROUND function is used to round-off the number to make it readable and user-friendly.
@@ -129,14 +129,14 @@ FROM Retail_Sales
 WHERE Category = 'Beauty';
 ```
 
-5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
+5. **Write a SQL query to find all transactions where the total_sale is greater than 1000**:
 ```sql
 SELECT * 
 FROM Retail_Sales
 WHERE Total_Sale > 1000;
 ```
 
-6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
+6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category**:
 ```sql
 SELECT 
 	Category,
@@ -166,7 +166,7 @@ FROM (
 WHERE RANK = 1;
 ```
 
-8. **Write a SQL query to find the top 10 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 10 customers based on the highest total sales**:
 ```sql
 SELECT 
 	Customer_ID,
@@ -177,7 +177,7 @@ ORDER BY 2 DESC
 LIMIT 10;
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
+9. **Write a SQL query to find the number of unique customers who purchased items from each category**:
 ```sql
 SELECT 
 	Category,
